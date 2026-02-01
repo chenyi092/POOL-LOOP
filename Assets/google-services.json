@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "734186114678",
+    "firebase_url": "https://micro-final-96bf2-default-rtdb.firebaseio.com",
+    "project_id": "micro-final-96bf2",
+    "storage_bucket": "micro-final-96bf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734186114678:android:369b7877e340d12758d957",
+        "android_client_info": {
+          "package_name": "com.micro.final"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzLVIZZDjv-cEBFgCcHD6Q_HqNX5z395o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
