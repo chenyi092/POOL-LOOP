@@ -16,3 +16,29 @@ POOL LOOP は、情報爆発の時代において「役に立たない情報」�
   - エネルギーの可視化
 ## デモ動画 | Demo Video
 [Interaction Flow](https://www.youtube.com/watch?v=IEYAUWUUYmQ)
+## システム構成 | System Architecture
+Webフロントエンド、リアルタイムデータベース、ゲームエンジン、ハードウェアを統合したクロスプラットフォーム・システムです。
+<img width="923" height="498" alt="截圖 2026-02-05 晚上10 56 37" src="https://github.com/user-attachments/assets/f120bdab-073f-4c51-bebd-86fc93de8d72" />
+#### インタラクションの流れ
+1. **Web**：視聴者が p5.js で構築されたフェイクニュースサイト上の「削除」ボタンをクリックします。
+2. **Data Relay**：信号が Firebase Realtime Database を通じて即時に転送されます。
+3. **Unity**：Unity側で削除信号を受信し、物理エンジンを用いて「文字ブロック」を画面内に落下・蓄積させます。
+4. **Hardware**：視聴者がリサイクル箱のハンドルを回すと、Raspberry Pi（3軸加速度センサー）が検知し、Firebase経由でUnity内の「扉」を開きます。
+5. **Feedback**：文字ブロックの落下に合わせて、物理的な電球が点灯し、情報のエネルギー変換を表現します。
+## 技術的な課題と解決策 | Key Challenges
+- **動的なマルチプラットフォーム通信**<br>
+  Firebase Realtime Database を中枢として活用し、Web(p5.js)、ゲームエンジン(Unity)、ハードウェア(Raspberry Pi)という異なるプラットフォーム間でのデータ通信を実現しました。
+- **中国語フォントのレンダリング最適化**<br>
+  Unityにおける繁体字中国語の表示制限を克服するため、TextMesh Pro を導入し、独自のフォントアセット管理を行うことで、美学的な表現を維持しました。
+- **3D物理オブジェクトの視覚制御**<br>
+  キューブの6つの面に文字を正確にマッピングするため、各面の法線方向を計算してテキストの向きを動的に補正するC#スクリプトを自作しました。<br>
+  これにより、物理挙動を伴うオブジェクト上でも視認性の高い文字表示が可能となりました。
+## 担当部分
+- **コンセプト立案**：創作コンセプトの執筆及びインタラクションフローの設計。
+- **Unityプロジェクト開発**：C#スクリプトの実装（Firebase同期ロジック、物理演算、テキスト生成）。
+- **ハードウェア連携設計**: センサーとソフトウェア間の通信プログラムおよびデバイスのテスト。
+## デモ画面
+<p align="center">
+<img src="https://github.com/user-attachments/assets/7a3004b9-28b6-4b6c-a0a7-70c6c0b5e8aa" width="45%"/>
+<img src="https://github.com/user-attachments/assets/a038bae9-05a2-4dae-ba58-fc9d104254ba" width="45%" />
+</p>
