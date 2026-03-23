@@ -18,8 +18,8 @@ POOL LOOP 是一項體驗型互動裝置，旨在探討在資訊爆炸的時代�
 ## demo影片 | Demo Video
 [互動流程](https://www.youtube.com/watch?v=IEYAUWUUYmQ)
 ## 系統架構 | System Architecture
-這是一項整合了 Web 前端、即時資料庫、遊戲引擎與硬體設備的跨平台系統。
-<img width="923" height="498" alt="截圖 2026-02-05 晚上10 56 37" src="https://github.com/user-attachments/assets/f120bdab-073f-4c51-bebd-86fc93de8d72" />
+這是一項整合了 Web 前端、即時資料庫、遊戲引擎與硬體設備的跨平台系統。<br>
+<img width="1051" height="580" alt="截圖 2026-03-23 下午5 42 24" src="https://github.com/user-attachments/assets/61d7cf56-cdea-4734-bb09-3638ec516cec" />
 #### 互動流程
 1. **Web**：觀眾點擊由 p5.js 建構的假新聞網站上的「刪除」按鈕。
 2. **Data Relay**：訊號透過 Firebase Realtime Database 進行即時傳輸。
