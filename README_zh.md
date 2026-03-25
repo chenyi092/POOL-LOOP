@@ -40,6 +40,6 @@ POOL LOOP 是一項體驗型互動裝置，旨在探討在資訊爆炸的時代�
 - **硬體連動設計**:感測器與軟體間的通訊程式及裝置測試。
 ## demo畫面
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7a3004b9-28b6-4b6c-a0a7-70c6c0b5e8aa" width="45%"/>
+<img src="https://github.com/user-attachments/assets/9c2cfdfc-b072-42fd-952f-337102804e00" width="45%"/>
 <img src="https://github.com/user-attachments/assets/a038bae9-05a2-4dae-ba58-fc9d104254ba" width="45%" />
 </p>
